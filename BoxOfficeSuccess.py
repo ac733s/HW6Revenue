@@ -19,7 +19,6 @@ print(f"→ Intercept: ${model.intercept_:.2f} million")
 for label, weight in zip(features.columns, model.coef_):
     print(f"→ Weight for '{label}': {weight:.2f}")
 
-# Step 5: Use the model to predict revenue for a sample movie
 # Step 5: Estimate revenue for custom movie inputs
 testInput = pd.DataFrame([[120, 8, 6]], columns=features.columns)
 
